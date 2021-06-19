@@ -6,8 +6,7 @@ namespace Dio.Series
     {
         SerieRepositorio repositorioSerie = new SerieRepositorio();
         FilmeRepositorio repositorioFilme = new FilmeRepositorio();
-        
-        // Métodos para entidade Serie
+        // Métodos para Series
         public object Serie(){
 
              foreach (int i in Enum.GetValues(typeof(Genero)))
@@ -74,15 +73,14 @@ namespace Dio.Series
         }
         public void VisualizarSerie()
         {
-            Console.Write("Digite o id da série");
+            Console.Write("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
             var serie = repositorioSerie.RetornaPorId(indiceSerie);
-
+            Console.WriteLine();
             Console.WriteLine(serie);
         }
-
-        // Métodos para entidade Filme
+        // Métodos para Filmes
         public object Filme(){
 
              foreach (int i in Enum.GetValues(typeof(Genero)))
@@ -153,19 +151,12 @@ namespace Dio.Series
         }
         public void VisualizarFilme()
         {
-            Console.Write("Digite o id do filme");
+            Console.Write("Digite o id do filme: ");
             int indiceFilme = int.Parse(Console.ReadLine());
 
             var filme = repositorioFilme.RetornaPorId(indiceFilme);
-
+            Console.WriteLine();
             Console.WriteLine(filme);
         }
-    
-    
-    
-    
-    
-    
-    
     }
 }

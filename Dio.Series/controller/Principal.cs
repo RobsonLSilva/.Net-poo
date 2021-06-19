@@ -41,7 +41,6 @@ namespace Dio.Series
                                     throw new ArgumentOutOfRangeException();
                             }
                             opcaoUsuario = ObterOpcaoSeries();
-                            Console.Clear();
                         }
                         break;
                     case "2": //Filme
@@ -72,7 +71,6 @@ namespace Dio.Series
                                     throw new ArgumentOutOfRangeException();
                             }
                             opcaoUsuario = ObterOpcaoFilmes();
-                            Console.Clear();
                         }
                         break;
                     case "C":
@@ -89,13 +87,16 @@ namespace Dio.Series
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
-            Console.WriteLine("DIO Séries/Filmes a seu dispor!!!");
-            Console.WriteLine("Informe a opção desejada:");
-            
-            Console.WriteLine("1 - Séries");
-            Console.WriteLine("2 - Filmes");
-            Console.WriteLine("C - Limpar Tela");
-            Console.WriteLine("X - Sair");
+            Console.WriteLine("|=====================================|");
+            Console.WriteLine("| DIO Séries & Filmes a seu dispor!!! |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      Informe a opção desejada:      |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("| 1 - Séries                          |");
+            Console.WriteLine("| 2 - Filmes                          |");
+            Console.WriteLine("| C - Limpar Tela                     |");
+            Console.WriteLine("| X - Sair                            |");
+            Console.WriteLine("|=====================================|");
             Console.WriteLine();
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
@@ -105,16 +106,19 @@ namespace Dio.Series
         private static string ObterOpcaoSeries()
         {
             Console.WriteLine();
-            Console.WriteLine("DIO Séries a seu dispor!!!");
-            Console.WriteLine("Informe a opção desejada:");
-            
-            Console.WriteLine("1 - Listar séries");
-            Console.WriteLine("2 - Inserir nova série");
-            Console.WriteLine("3 - Atualizar série");
-            Console.WriteLine("4 - Excluir série");
-            Console.WriteLine("5 - Visualizar série");
-            Console.WriteLine("C - Limpar Tela");
-            Console.WriteLine("X - Sair");
+            Console.WriteLine("|=====================================|");
+            Console.WriteLine("|               Séries                |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      Informe a opção desejada:      |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("| 1 - Listar séries                   |");
+            Console.WriteLine("| 2 - Inserir nova série              |");
+            Console.WriteLine("| 3 - Atualizar série                 |");
+            Console.WriteLine("| 4 - Excluir série                   |");
+            Console.WriteLine("| 5 - Visualizar série                |");
+            Console.WriteLine("| C - Limpar Tela                     |");
+            Console.WriteLine("| X - Sair                            |");
+            Console.WriteLine("|=====================================|");
             Console.WriteLine();
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
@@ -124,16 +128,19 @@ namespace Dio.Series
         private static string ObterOpcaoFilmes()
         {
             Console.WriteLine();
-            Console.WriteLine("DIO Filmes a seu dispor!!!");
-            Console.WriteLine("Informe a opção desejada:");
-            
-            Console.WriteLine("1 - Listar Filmes");
-            Console.WriteLine("2 - Inserir novo Filme");
-            Console.WriteLine("3 - Atualizar Filme");
-            Console.WriteLine("4 - Excluir Filme");
-            Console.WriteLine("5 - Visualizar Filme");
-            Console.WriteLine("C - Limpar Tela");
-            Console.WriteLine("X - Sair");
+            Console.WriteLine("|=====================================|");
+            Console.WriteLine("|               Filmes                |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      Informe a opção desejada:      |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("| 1 - Listar filmes                   |");
+            Console.WriteLine("| 2 - Inserir novo filme              |");
+            Console.WriteLine("| 3 - Atualizar filme                 |");
+            Console.WriteLine("| 4 - Excluir filme                   |");
+            Console.WriteLine("| 5 - Visualizar filme                |");
+            Console.WriteLine("| C - Limpar Tela                     |");
+            Console.WriteLine("| X - Sair                            |");
+            Console.WriteLine("|=====================================|");
             Console.WriteLine();
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
